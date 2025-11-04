@@ -1,4 +1,4 @@
-
+#First version of real-time fake sales polling script
 import requests, time
 
 API_URL = "https://dummyjson.com/products"
