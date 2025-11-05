@@ -13,8 +13,8 @@ while True:
     products_data = get_products_data()
     print("🛒 New Products Data Arrived!")
 
-    for product in products_data['products']:
-        print(f"Product: {product['title']}, Price: ${product['price']}")
+    for item in products_data['products']:
+        print(f"Product: {item['title']}, Price: ${item['price']}")
         print("Waiting 5 seconds before polling again...\n")
         time.sleep(5)
 

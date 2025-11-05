@@ -18,3 +18,7 @@ while True:
 
         if file.tell() == 0:
             writer.writerow(["Title", "Price", "Description"])
+
+        for product in products_data['products']:
+            writer.writerow([product['title'], product['price'], product['description']])
+            print(f"Saved Product: {product['title']}, Price: ${product['price']}")
