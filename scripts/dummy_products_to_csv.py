@@ -22,3 +22,4 @@ while True:
         for product in products_data['products']:
             writer.writerow([product['title'], product['price'], product['description']])
             print(f"Saved Product: {product['title']}, Price: ${product['price']}")
+            time.sleep(5)
