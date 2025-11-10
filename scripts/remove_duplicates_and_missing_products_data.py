@@ -1,8 +1,7 @@
-# read and display data from cvs file
-
 import pandas
 
 df = pandas.read_csv('products_data.csv')
+df = df.dropna()
+df = df.drop_duplicates()
 
-print(df.head())
-
+print(df)
